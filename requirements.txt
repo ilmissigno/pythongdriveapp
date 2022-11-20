@@ -2,3 +2,7 @@ fastapi==0.87.0
 google_api_python_client==2.66.0
 google_auth_oauthlib==0.7.1
 protobuf==4.21.9
+uvicorn==0.12.3
+aiofiles==0.6.0
+python-multipart==0.0.5
+jinja2==2.11.2
