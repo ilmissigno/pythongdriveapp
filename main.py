@@ -9,7 +9,7 @@ from googleapiclient.discovery import build
 app = FastAPI()
 
 @app.get("/getDriveInfo")
-async def root(urlDrive):
+async def root(urlDrive: str):
     oauth_scope = ['https://www.googleapis.com/auth/drive']
     credentials = service_account.Credentials.from_service_account_file('data/service_account.json',scopes=oauth_scope)
     service =  build('drive', 'v3', credentials=credentials, cache_discovery=False)
